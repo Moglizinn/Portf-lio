@@ -1,89 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
 </head>
+
 <body>
     <header>
-       
+
         <nav class="tema">
             <div class="barra">
+                <ul><a href="#strof1">Parceirias</a></ul>
                 <ul><a href="#segunda">Contatos</a></ul>
                 <ul><a href="#edu">Ensino</a></ul>
                 <ul><a href="#tec">Conhecimento</a></ul>
             </div>
             <figure id="foto">
-                <img src="https://m.media-amazon.com/images/S/pv-target-images/a8833060cad6d88e4e2e643ea9ad16c54514d6ff1dfca3f23732d7969bc87d15.jpg" alt="">
-                <figcaption>BEM VINDO AO MEU PORTIFOLIO <br> FALAREI UM POUCO SOBRE MIM</figcaption>                
-            </div>
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/a8833060cad6d88e4e2e643ea9ad16c54514d6ff1dfca3f23732d7969bc87d15.jpg"
+                    alt="">
+                <figcaption>BEM VINDO AO MEU PORTIFOLIO <br> FALAREI UM POUCO SOBRE MIM</figcaption>
         </nav>
     </header>
     <main class="corp">
         <section>
-                <div class="segunda" id="segunda">
-                    <H1 >Quem sou eu?</H1>
-                    <br>
+            <div class="segunda" id="segunda">
                 <ul>
-                        <ul>
-                     <li>
-                        <a href="https://pt-br.facebook.com/login/device-based/regular/login/">facebook</a>
-                    </li>
-                     <li>
-                        <a href="https://www.linkedin.com/signup?_l=pt">linkedin</a>
-                    </li>
-                     <li>
-                        <a href="https://www.instagram.com/">instagram</a>
-                    </li>
-                </ul>
-                    <br>
+                    <H1>Quem sou eu?</H1>
                     <p>Patrick Estrela</p>
                     <p>19 Anos</p>
                     <p>Analista Desenvolverdor de Sistemas</p>
-                <div>
+                </ul>
+                <br>
+                <h2>Contatos</h2>
+                <ul>
+                    <ul>
+                        <li>
+                            <a href="https://pt-br.facebook.com/login/device-based/regular/login/">facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/signup?_l=pt">linkedin</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/">instagram</a>
+                        </li>
+                    </ul>
         </section>
         <section class="edu" id="edu">
             <h1>Educação e Formação </h1>
             <br>
             <ul>Ensino fundamental - Completo </ul>
             <br>
-            <ul>Formado em: <br><br> - Analise e Denvolvimento de Sistemas </ul>     
+            <ul>Formado em: <br><br> - Analise e Denvolvimento de Sistemas </ul>
             <br>
-            <ul>- Assistende de Desenvolvimento de Aplicativos </ul> 
+            <ul>- Assistende de Desenvolvimento de Aplicativos </ul>
             <br>
-            <ul>- Assistente de Operação de Redes </ul>      
+            <ul>- Assistente de Operação de Redes </ul>
             <br>
             <ul>- Assistende de Suporte de Manuteção de Computadores</ul>
         </section>
         <section class="tec" id="tec">
-        
             <h1>Tecnologias</h1>
             <p>Atualmente atuo na area de back-end e<br>Tenho experiencia com as seguintes lingugens </p>
             <br>
-         <ul>
-         <ul>
-            <li>
-                Java
-            </li> 
-            <li>
-                PHP
-            </li>
-            <li>
-                SQL
-            </li>   
-            <li>
-                pyton
-            </li>    
-            <li id="tec1">
-                javascript
-            </li>
-         </ul>                                                                                          
+            <ul>
+                <ul>
+                    <li>
+                        Java
+                    </li>
+                    <li>
+                        PHP
+                    </li>
+                    <li>
+                        SQL
+                    </li>
+                    <li>
+                        pyton
+                    </li>
+                    <li id="tec1">
+                        javascript
+                    </li>
+                </ul>
         </section>
-        <section class="strof1">
-            
-            <h1>Empresas parceiras</h1>          
+        <section class="strof1" id="strof1">
+
+            <h1>Empresas parceiras</h1>
             <li>
                 Amazon
             </li>
@@ -104,10 +107,7 @@
                 Cacau Show
             </li>
         </section>
-        <section class="strof2">
-            <H1></H1>
-        </section>
-
     </main>
 </body>
+
 </html>
