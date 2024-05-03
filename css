@@ -1,0 +1,115 @@
+*{
+    margin: auto; /* margim vai automatico para todos itens des que esteja no dentro do asterisco */
+    
+}
+body{
+    background-color: rgb(30, 93, 134);
+}
+img{
+    margin: 0%;
+    position: relative; 
+    width: 197.6vh; /* width= largura pros lados, HV faz que a imagem não perca a qualidade  */
+    height: 48.4vw; /* height= comprimento da imagem, VW faz que a imagem não perca a qualidade */
+}
+#foto figcaption {
+    position: absolute;
+    top: 145px; /* faz que o titulo de fique no topo */
+    left: 20px; /* a direita a 20px  */
+    font-size: 60px; /* tamanho da fonte  do titulo */
+    color: rgb(0, 0, 0);/* cor do titulo */
+    text-shadow: 0px 0px 5px rgb(126, 112, 112); /* sombra do texto*/
+    font-family: Georgia, 'Times New Roman', Times, serif ; /* fonte */
+    text-align: center; /* a onde o texto deve ficar na tela  */
+    
+}
+.barra {
+    background: url('https://artpoin.com/wp-content/uploads/2023/12/artpoin-bob-esponja81.png');
+    background-size: 4% 100%;
+    background-repeat: no-repeat;
+    margin: 0%; /* espasamento da margem */
+    text-align: center 20px; /* onde o texto deve ficar na tela */
+    background-color: rgb(0, 0, 0); 
+    width: 100%; /* lagura da barra */
+    padding-block-end: 1%; /* espaço dentro da barra */
+    display: flex; /* deixa os itens no centro da tela */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fonte do texto */
+    color: aliceblue;
+    font-size: 20px; /* Tamanho da letra*/
+    text-align: justify;
+} 
+h1{
+    display: flex; /* deixa os itens no centro da tela ou centralizado em relaçao onde esteja sendo aplicado*/
+    
+}
+.edu{
+    background: url('https://cloudfront-us-east-1.images.arcpublishing.com/estadao/OJ7PHN67OVJH7OUFPRX3MFC2NY.jpg');
+    color: rgb(0, 0, 0);
+    padding-bottom: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: justify;
+    
+}
+.tec{
+    background:  url(''), url('https://1.bp.blogspot.com/-X5oqdZRfPmg/Xvoj5oeBRHI/AAAAAAAAEu0/akjOjTCa9KQoodV2ifoKH9DZuxjhvK5dQCNcBGAsYHQ/s1600/SpongeBob%2BSquarePants_%2BBattle%2BFor%2BBikini%2BBottom%2B-%2BRehydrated_20200617215116.png');
+    padding-bottom: 20%;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: right bottom;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif ;
+    text-align: justify;
+    
+}
+#tec1{
+    background: url('https://media0.giphy.com/media/5GCKZHxhmXBWU/200.webp?cid=790b7611c390mvpnym4kpggztr73iwaax7peb9bjbr0eli5n&ep=v1_stickers_search&rid=200.webp&ct=s');
+    background-position: right  10%;
+    background-repeat: no-repeat; 
+    background-size: 20%;
+
+}
+.strof1{
+    background-color: 0;
+    padding-bottom: 0%; 
+    color: rgb(0, 0, 0);
+    padding-bottom: 25%;
+    background:  rgb(30, 93, 134) url('https://www.justwatch.com/images/backdrop/248777953/s640/the-patrick-star-show/the-patrick-star-show');
+    background-size: 100% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    
+}
+.segunda{
+    margin: auto;
+    background: rgb(30, 93, 134) url('https://i.kym-cdn.com/photos/images/newsfeed/000/521/095/f3e.gif'); /* imagem */
+    background-repeat: no-repeat; /* para não reptir a imagem */
+    background-position: right;/* posoção da imagem */
+    padding-bottom: 10%; /* espaço entre as imagens na parte de baixo */
+    background-size: 50% 100%; /* lagura da imagem */
+    text-align: center 20px;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    text-align: right 10px;
+}
+a:link{
+    color: aliceblue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited{
+    color: aliceblue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    color: aliceblue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
