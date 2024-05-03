@@ -36,7 +36,7 @@ img{
     color: aliceblue;
     font-size: 20px; /* Tamanho da letra*/
     text-align: justify;
-} 
+}
 h1{
     display: flex; /* deixa os itens no centro da tela ou centralizado em relaçao onde esteja sendo aplicado*/
     
@@ -54,7 +54,7 @@ h1{
     
 }
 .tec{
-    background:  url(''), url('https://1.bp.blogspot.com/-X5oqdZRfPmg/Xvoj5oeBRHI/AAAAAAAAEu0/akjOjTCa9KQoodV2ifoKH9DZuxjhvK5dQCNcBGAsYHQ/s1600/SpongeBob%2BSquarePants_%2BBattle%2BFor%2BBikini%2BBottom%2B-%2BRehydrated_20200617215116.png');
+    background:  url('https://media0.giphy.com/media/5GCKZHxhmXBWU/200.webp?cid=790b7611c390mvpnym4kpggztr73iwaax7peb9bjbr0eli5n&ep=v1_stickers_search&rid=200.webp&ct=s'), url('https://1.bp.blogspot.com/-X5oqdZRfPmg/Xvoj5oeBRHI/AAAAAAAAEu0/akjOjTCa9KQoodV2ifoKH9DZuxjhvK5dQCNcBGAsYHQ/s1600/SpongeBob%2BSquarePants_%2BBattle%2BFor%2BBikini%2BBottom%2B-%2BRehydrated_20200617215116.png');
     padding-bottom: 20%;
     background-repeat: no-repeat;
     background-size: 50% 100%;
@@ -67,6 +67,7 @@ h1{
 }
 #tec1{
     background: url('https://media0.giphy.com/media/5GCKZHxhmXBWU/200.webp?cid=790b7611c390mvpnym4kpggztr73iwaax7peb9bjbr0eli5n&ep=v1_stickers_search&rid=200.webp&ct=s');
+    height: 10%;
     background-position: right  10%;
     background-repeat: no-repeat; 
     background-size: 20%;
