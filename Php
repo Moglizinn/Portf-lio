@@ -1,0 +1,128 @@
+<?php
+// Função para ler o arquivo JSON
+function lerRoupas() {
+    $json = file_get_contents('roupas.json');
+    return json_decode($json, true);
+}
+
+// Função para salvar o arquivo JSON
+function salvarRoupas($roupas) {
+    file_put_contents('roupas.json', json_encode($roupas, JSON_PRETTY_PRINT));
+}
+
+// CREATE
+// CREATE
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['acao']) && $_POST['acao'] == 'adicionar') {
+    $nome = $_POST['nome'];
+    $tamanho = $_POST['tamanho'];
+    $quantidade = $_POST['quantidade'];
+
+    // Lê as roupas existentes
+    $roupas = lerRoupas(); // Lê o array de roupas do arquivo JSON
+
+    // Garante que $roupas é um array
+    if (!is_array($roupas)) {
+        $roupas = [];
+    }
+
+    // Adiciona uma nova roupa
+    $roupas[] = [
+        'id' => count($roupas) + 1, // Define o ID
+        'nome' => $nome,
+        'tamanho' => $tamanho,
+        'quantidade' => $quantidade
+    ];
+
+    // Salva as roupas de volta no arquivo JSON
+    salvarRoupas($roupas);
+}
+
+
+// READ
+$roupas = lerRoupas();
+
+// DELETE
+if (isset($_GET['delete'])) {
+    $id = intval($_GET['delete']);
+    $roupas = array_filter($roupas, fn($roupa) => $roupa['id'] !== $id);
+    salvarRoupas(array_values($roupas));
+    header('Location: index.php');
+    exit;
+}
+
+// UPDATE
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['acao']) && $_POST['acao'] == 'atualizar') {
+    $id = intval($_POST['id']);
+    $nome = $_POST['nome'];
+    $tamanho = $_POST['tamanho'];
+    $quantidade = $_POST['quantidade'];
+
+    $roupas = lerRoupas();
+    foreach ($roupas as &$roupa) {
+        if ($roupa['id'] === $id) {
+            $roupa['nome'] = $nome;
+            $roupa['tamanho'] = $tamanho;
+            $roupa['quantidade'] = $quantidade;
+        }
+    }
+    salvarRoupas($roupas);
+    header('Location: index.php');
+    exit;
+}
+?>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.php">
+    <link rel="stylesheet" href="style.css">
+    <title>Estoque de Roupas</title>
+</head>
+<h1>Estoque de Roupas</h1>
+
+<h2>Adicionar Roupas</h2>
+<form method="POST">
+    <input type="hidden" name="acao" value="adicionar">
+    Marca: <input type="text" name="nome" required>
+    Tamanho: <input type="text" name="quantidade" min="0" step="1" required>
+    Quantidade: <input type="number" name="quantidade" min="0" step="1" required>
+
+    <button type="submit">Adicionar</button>
+
+<body>
+<!-- Exibir as roupas -->
+
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Tamanho</th>
+        <th>Quantidade</th>
+        <th>Ações</th>
+    </tr>
+
+    <?php $roupas = lerRoupas(); 
+
+ if (empty($roupas)) {
+    echo "<p>Nenhuma roupa encontrada.</p>";
+ } else 
+    foreach ($roupas as $roupa): ?>
+        <tr>
+            <td><?= htmlspecialchars($roupa['nome']) ?></td>
+            <td><?= htmlspecialchars($roupa['tamanho']) ?></td>
+            <td><?= htmlspecialchars($roupa['quantidade']) ?></td>
+            <td>
+                <a href="?delete=<?= $roupa['id'] ?>">Remover</a>
+                
+            </td>
+        </tr>
+    <?php endforeach; ?>
+</table>
+</form>
+</body>
+</html>
